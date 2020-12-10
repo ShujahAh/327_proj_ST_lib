@@ -2,14 +2,14 @@
  * Smalltalk.cpp
  *
  *  Created on: Dec 8, 2020
- *      Author: zestra
+ *      Author: Ahmad Shujah
  */
 
 
 #include "includes/Smalltalk.h"
 #include "includes/constants.h"
 
-//derived class will set Nationality, iPerson. iPerson is just a counter used to distinguish between objects of the same type
+	//derived class will set Nationality, iPerson. iPerson is just a counter used to distinguish between objects of the same type
 	Smalltalk::Smalltalk(std::string myNationality,int iPerson)
 	:nationality(myNationality),mySmallTalk(0),iPerson(iPerson),
 	 current_phrase(0),pWatch(std::unique_ptr<Watch>()){

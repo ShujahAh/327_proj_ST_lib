@@ -2,14 +2,14 @@
  * ST_American_DonutEnthusiest.cpp
  *
  *  Created on: Dec 8, 2020
- *      Author: zestra
+ *      Author: Ahmad Shujah
  */
 
 #include "includes/ST_American_DonutEnthusiest.h"
 #include "includes/constants.h"
 
 
-//use base class constructor in initializer list to set Nationality and iPerson (See constants for Nationality strings)
+	//use base class constructor in initializer list to set Nationality and iPerson (See constants for Nationality strings)
 	//also prepare the object for use by calling populatePhrases()
 	ST_American_DonutEnthusiest::ST_American_DonutEnthusiest(int i):Smalltalk_American(AMERICAN_DE, i){
 		populatePhrases();

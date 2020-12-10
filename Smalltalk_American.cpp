@@ -2,12 +2,12 @@
  * SmallTalk_American.cpp
  *
  *  Created on: Dec 8, 2020
- *      Author: zestra
+ *      Author: Ahmad Shujah
  */
 #include "includes/Smalltalk_American.h"
 #include "includes/constants.h"
 
-//this constructor should call the 2 parameter constructor below in it's initializer list
+	//this constructor should call the 2 parameter constructor below in it's initializer list
 	Smalltalk_American::Smalltalk_American(int iPerson):Smalltalk(AMERICAN, iPerson){
 		populatePhrases();
 

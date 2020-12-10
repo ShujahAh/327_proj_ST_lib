@@ -3,7 +3,7 @@
  * Functions.cpp
  *
  *  Created on: Nov 5, 2017
- *      Author: keith
+ *      Author: Ahmad Shujah
  */
 #include <iostream>
 #include <memory>
@@ -42,12 +42,13 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit,
 		lis.push_back(std::unique_ptr<Smalltalk>(new ST_American_DonutEnthusiest(i)));
 
 	}
+
+	//Checks to see if there are more watches then people
 	if (numWatches > numBrit + numAmerican + numbAmericanDonutEnthusiest){
 			numWatches = numBrit + numAmerican + numbAmericanDonutEnthusiest;
 		}
-		//then give the watches away to first NUM_WATCHES people in the vector
 
-
+	//then give the watches away to first NUM_WATCHES people in the vector
 	for (auto &x: lis){
 			std::unique_ptr<Watch> pWach = std::unique_ptr<Watch>(new Watch());
 			if(numWatches > 0){
@@ -55,10 +56,7 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit,
 			}
 			numWatches -=1;
 	}
-	//create some watches (as long as number watches <= numb people)
 
-	// when you are finished using the vector you return
-	//from this function(see Smalltalk header for hints)
 
 	//return your vector
 	return lis;
